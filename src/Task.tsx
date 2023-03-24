@@ -16,7 +16,7 @@ class TaskCard extends React.Component<Task, TaskState> {
   render() {
     const { title, dueDate, completedAtDate, assigneeName } = this.props;
     return (
-      <div className="TaskItem bg-gray-800 text-white p-2 rounded m-1 border-2 border-red-600">
+      <div className="TaskItem bg-gray-800 text-white p-2 rounded m-1 border-2 border-violet-500">
         <h2 className="text-xl font-bold">{title}</h2>
         {completedAtDate && (
           <p>Completed on: {completedAtDate.toLocaleDateString("en-IN")}</p>
